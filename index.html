@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<meta charset="UTF-8" />
+  		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  		<title>Image Gallery</title>
+  		<link rel="stylesheet" href="style.css" />
+		<h1><span style="font-size:100px ;">Image</span> gallery</h1>
+		
+
+	</head>
+	<body>
+		<div class="filter-buttons">
+    		<button class="filter-btn active" data-filter="all">All</button>
+    		<button class="filter-btn" data-filter="sweets">Sweets</button>
+    		<button class="filter-btn" data-filter="veg">Veg</button>
+    		<button class="filter-btn" data-filter="non-veg">Non-Veg</button>
+    		<button class="filter-btn" data-filter="cake">cake</button>
+    		<button class="filter-btn" data-filter="fruits">Fruits</button>
+    		<button class="filter-btn" data-filter="snacks">Snacks</button>
+
+  		</div>
+		<table class="gallery">
+			<tr id="galleryRow">
+	          <td class="gallery-item" data-category="sweets"><img src="images/sweet1.jpg" onclick="openLightbox(0)" width="150"></td>
+	          <td class="gallery-item" data-category="sweets"><img src="images/sweet2.jpg" onclick="openLightbox(1)" width="150"></td>
+	          <td class="gallery-item" data-category="sweets"><img src="images/sweet3.jpg" onclick="openLightbox(2)" width="150"></td>
+			   
+	        </tr>
+	        <tr id="galleryRow">
+	        	<td class="gallery-item" data-category="veg"><img src="images/veg1.jpg" onclick="openLightbox(3)" width="150"></td>
+	        	<td class="gallery-item" data-category="veg"><img src="images/veg2.jpg" onclick="openLightbox(4)" width="150"></td>
+	        	<td class="gallery-item" data-category="veg"><img src="images/veg3.jpg" onclick="openLightbox(5)" width="150"></td>
+				
+	        	
+
+	        </tr>
+	        <tr id="galleryRow">
+	        	<td class="gallery-item" data-category="non-veg"><img src="images/biryani.jpg" onclick="openLightbox(6)" width="150"></td>
+	        	<td class="gallery-item" data-category="non-veg"><img src="images/chicken.jpg" onclick="openLightbox(7)" width="150"></td>
+	        	<td class="gallery-item" data-category="non-veg"><img src="images/fish.jpg" onclick="openLightbox(8)" width="150"></td>
+				
+
+	        </tr>
+	        <tr id="galleryRow">
+	        	<td class="gallery-item" data-category="cake"><img src="images/cake1.jpg" onclick="openLightbox(9)" width="150"></td>
+	        	<td class="gallery-item" data-category="cake"><img src="images/cake2.jpg" onclick="openLightbox(10)" width="150"></td>
+	        	<td class="gallery-item" data-category="cake"><img src="images/cake3.jpg" onclick="openLightbox(11)" width="150"></td>
+				
+
+	        </tr>
+	        <tr id="galleryRow">
+	        	<td class="gallery-item" data-category="fruits"><img src="images/apple.jpg" onclick="openLightbox(12)" width="150"></td>
+	        	<td class="gallery-item" data-category="fruits"><img src="images/mango.jpg" onclick="openLightbox(13)" width="150"></td>
+	        	<td class="gallery-item" data-category="fruits"><img src="images/pomogranate.jpg" onclick="openLightbox(14)" width="150"></td>
+				
+
+	        </tr>
+	        <tr id="galleryRow">
+	        	<td class="gallery-item" data-category="snacks"><img src="images/snack1.jpg" onclick="openLightbox(15)" width="150"></td>
+	        	<td class="gallery-item" data-category="snacks"><img src="images/snack2.jpg" onclick="openLightbox(16)" width="150"></td>
+	        	<td class="gallery-item" data-category="snacks"><img src="images/snack3.jpg" onclick="openLightbox(17)" width="150"></td>
+
+				
+
+	        </tr>
+			
+		</table>
+		<div id="lightbox" class="lightbox">
+    		<span class="close">&times;</span>
+    		<img class="lightbox-content" id="lightbox-img" />
+    		<button class="nav prev">&#10094;</button>
+    		<button class="nav next">&#10095;</button>
+  		</div>
+		
+		<script src="./script.js"></script>
+	    
+	</body>
+	</html>
